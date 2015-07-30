@@ -55,6 +55,19 @@ typedef NS_ENUM(int, SPTouchPhase)
 
 @interface SPTouch : NSObject
 
+/// --------------------
+/// @name Initialization
+/// --------------------
+
+/// Initializes a new touch object with the specified id. _Designated Initializer_.
+- (instancetype)initWithID:(size_t)touchID;
+
+/// Factory method.
++ (instancetype)touchWithID:(size_t)touchID;
+
+/// Factory method.
++ (instancetype)touch;
+
 /// -------------
 /// @name Methods
 /// -------------
@@ -68,9 +81,15 @@ typedef NS_ENUM(int, SPTouchPhase)
 /// Returns the movement of the touch between the current and previous location.
 - (SPPoint *)movementInSpace:(SPDisplayObject *)space;
 
+/// Indicates if the target or one of its children is touched.
+- (BOOL)isTouchingTarget:(SPDisplayObject *)target;
+
 /// ----------------
 /// @name Properties
 /// ----------------
+
+/// The identifier of a touch.
+@property (nonatomic, readonly) size_t touchID;
 
 /// The moment the event occurred (in seconds since application start).
 @property (nonatomic, readonly) double timestamp;

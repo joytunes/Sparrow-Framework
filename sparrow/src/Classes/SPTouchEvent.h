@@ -79,6 +79,18 @@ SP_EXTERN NSString *const SPEventTypeTouch;
 /// Gets a set of SPTouch objects that originated over a certain target and are in a certain phase.
 - (NSSet *)touchesWithTarget:(SPDisplayObject *)target andPhase:(SPTouchPhase)phase;
 
+/// Returns a touch that originated over a certain target.
+- (SPTouch *)touchWithTarget:(SPDisplayObject *)target;
+
+/// Returns a touch that originated over a certain target with a certain phase.
+- (SPTouch *)touchWithTarget:(SPDisplayObject *)target andPhase:(SPTouchPhase)phase;
+
+/// Returns a touch that originated over a certain target with a certain phase and ID.
+- (SPTouch *)touchWithTarget:(SPDisplayObject *)target andPhase:(SPTouchPhase)phase touchID:(size_t)touchID;
+
+/// Indicates if a target is currently being touched or hovered over.
+- (BOOL)interactsWithTarget:(SPDisplayObject *)target;
+
 /// ----------------
 /// @name Properties
 /// ----------------
