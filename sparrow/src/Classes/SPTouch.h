@@ -115,4 +115,7 @@ typedef NS_ENUM(int, SPTouchPhase)
 /// The display object at which the touch occurred.
 @property (nonatomic, readonly) SPDisplayObject *target;
 
+/// The amount of force that was applied to the touch, as a factor from 0 to 1.
+@property (nonatomic, readonly) float forceFactor;
+
 @end

@@ -22,5 +22,6 @@
 @property (nonatomic, assign) int tapCount;
 @property (nonatomic, assign) SPTouchPhase phase;
 @property (nonatomic, strong) SPDisplayObject *target;
+@property (nonatomic, assign) float forceFactor;
 
 @end

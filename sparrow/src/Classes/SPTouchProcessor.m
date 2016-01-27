@@ -93,6 +93,7 @@
                 existingTouch.globalX = touch.globalX;
                 existingTouch.globalY = touch.globalY;
                 existingTouch.phase = touch.phase;
+                existingTouch.forceFactor = touch.forceFactor;
                 existingTouch.tapCount = touch.tapCount;
                 
                 if (!existingTouch.target.stage)

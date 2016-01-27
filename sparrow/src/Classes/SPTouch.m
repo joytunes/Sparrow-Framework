@@ -27,6 +27,7 @@
 @property (nonatomic, assign) SPTouchPhase phase;
 @property (nonatomic, strong) SPDisplayObject *target;
 @property (nonatomic, assign) size_t touchID;
+@property (nonatomic, assign) float forceFactor;
 
 @end
 
@@ -41,6 +42,7 @@
     SPTouchPhase _phase;
     SPDisplayObject *_target;
     size_t _touchID;
+    float _forceFactor;
 }
 
 #pragma mark Initialization
@@ -140,6 +142,7 @@
     clone->_tapCount = _tapCount;
     clone->_timestamp = _timestamp;
     clone->_target = [_target retain];
+    clone->_forceFactor = _forceFactor;
     return clone;
 }
 
