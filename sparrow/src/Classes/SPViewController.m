@@ -57,7 +57,6 @@
     dispatch_queue_t _resourceQueue;
     SPContext *_resourceContext;
     
-    double _lastTouchTimestamp;
     float _contentScaleFactor;
     float _viewScaleFactor;
     BOOL _supportHighResolutions;
@@ -288,13 +287,12 @@
 
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    _lastTouchTimestamp -= 0.0001f; // cancelled touch events have an old timestamp -> workaround
     [self processTouchEvent:event];
 }
 
 - (void)processTouchEvent:(UIEvent *)event
 {
-    if (!self.paused && _lastTouchTimestamp != event.timestamp)
+    if (!self.paused)
     {
         @autoreleasepool
         {
@@ -331,7 +329,6 @@
             }
 
             [_touchProcessor processTouches:touches];
-            _lastTouchTimestamp = event.timestamp;
         }
     }
 }
