@@ -24,7 +24,7 @@ Version 2.1 - 2014-07-04
 - fixed performance problem by disabling vertex attrib arrays after filter rendering
 - fixed margin calculation in Blur Filter
 
-+ Again, a HUGE thanks to Robert Carone for his support!
+Again, a HUGE thanks to Robert Carone for his support!
 
 Version 2.1rc - 2014-04-04
 --------------------------
@@ -68,8 +68,8 @@ Version 2.1rc - 2014-04-04
 - fixed async texture scale in demo on iPad 3+
 - fixed crash of sound channel when it couldn't be created
 
-+ Thanks to Robert Carone for his MASSIVE help with this release! The majority
-  of these changes were done by him; most importantly the MRC change.
+Thanks to Robert Carone for his MASSIVE help with this release! The majority
+of these changes were done by him; most importantly the MRC change.
 
 version 2.0.1 - 2013-10-03
 --------------------------
