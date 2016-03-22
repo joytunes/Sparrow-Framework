@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Sparrow"
-  s.version      = "2.1"
+  s.version      = "2.1.56988637"
   s.summary      = "The Open Source Game Engine for iOS"
   s.description  =
     <<-DESC
@@ -19,8 +19,8 @@ Pod::Spec.new do |s|
   s.social_media_url = "http://twitter.com/Gamua"
   s.platform         = :ios, "5.0"
   s.source           = {
-    :git => "https://github.com/Gamua/Sparrow-Framework.git",
-    :tag => "v#{s.version}"
+    :git => "https://github.com/joytunes/Sparrow-Framework.git",
+    :branch => "joytunes"
   }
   s.source_files  = "sparrow/src/Classes/*.{h,m}"
   s.frameworks =
