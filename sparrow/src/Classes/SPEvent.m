@@ -29,8 +29,8 @@ NSString *const SPEventTypeFlatten              = @"SPEventTypeFlatten";
 
 @implementation SPEvent
 {
-    SPEventDispatcher *__weak _target;
-    SPEventDispatcher *__weak _currentTarget;
+    SPEventDispatcher *__unsafe_unretained _target;
+    SPEventDispatcher *__unsafe_unretained _currentTarget;
     NSString *_type;
     BOOL _stopsImmediatePropagation;
     BOOL _stopsPropagation;
