@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Sparrow"
-  s.version      = "2.1.56988637"
+  s.version      = "2.1.569"
   s.summary      = "The Open Source Game Engine for iOS"
   s.description  =
     <<-DESC
