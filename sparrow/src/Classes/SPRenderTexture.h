@@ -14,7 +14,7 @@
 
 @class SPDisplayObject;
 
-typedef void (^SPDrawingBlock)();
+typedef void (^SPDrawingBlock)(void);
 
 /** ------------------------------------------------------------------------------------------------
  

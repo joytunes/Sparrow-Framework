@@ -14,7 +14,7 @@
 
 // typedefs
 
-typedef void (^SPCallbackBlock)();
+typedef void (^SPCallbackBlock)(void);
 
 // defines
 
