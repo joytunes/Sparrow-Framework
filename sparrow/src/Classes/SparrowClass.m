@@ -11,7 +11,7 @@
 
 #import <Sparrow/SparrowClass.h>
 
-static __unsafe_unretained SPViewController *controller = nil;
+static __weak SPViewController *controller = nil;
 
 @implementation Sparrow
 

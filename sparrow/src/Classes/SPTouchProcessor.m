@@ -36,7 +36,7 @@
 
 @implementation SPTouchProcessor
 {
-    SPDisplayObjectContainer *__unsafe_unretained _root;
+    SPDisplayObjectContainer *__weak _root;
     NSMutableSet *_currentTouches;
 }
 

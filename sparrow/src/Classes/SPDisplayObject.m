@@ -41,7 +41,7 @@
     BOOL _touchable;
     BOOL _orientationChanged;
     
-    SPDisplayObjectContainer *__unsafe_unretained _parent;
+    SPDisplayObjectContainer *__weak _parent;
     SPMatrix *_transformationMatrix;
     double _lastTouchTimestamp;
     NSString *_name;
