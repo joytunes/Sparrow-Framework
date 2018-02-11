@@ -42,6 +42,6 @@
 /// ----------------
 
 /// The root display container to check for touched targets.
-@property (unsafe_unretained,nonatomic, weak) SPDisplayObjectContainer *root;
+@property (unsafe_unretained,nonatomic) SPDisplayObjectContainer *root;
 
 @end
