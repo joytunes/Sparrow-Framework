@@ -18,7 +18,7 @@
 @implementation SPEventListener
 {
     SPEventBlock _block;
-    id __weak _target;
+    id __unsafe_unretained _target;
     SEL _selector;
 }
 
