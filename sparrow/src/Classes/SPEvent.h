@@ -81,9 +81,9 @@ SP_EXTERN NSString *const SPEventTypeFlatten;
 @property (nonatomic, readonly) BOOL bubbles; 
 
 /// The object that dispatched the event.
-@property (weak, nonatomic, readonly) SPEventDispatcher *target; 
+@property (unsafe_unretained, nonatomic, readonly) SPEventDispatcher *target; 
 
 /// The object the event is currently bubbling at.
-@property (weak, nonatomic, readonly) SPEventDispatcher *currentTarget; 
+@property (unsafe_unretained, nonatomic, readonly) SPEventDispatcher *currentTarget; 
 
 @end

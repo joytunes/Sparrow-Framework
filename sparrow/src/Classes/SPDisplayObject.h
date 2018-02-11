@@ -170,7 +170,7 @@
 @property (weak, nonatomic, readonly) SPRectangle *bounds;
 
 /// The display object container that contains this display object.
-@property (weak, nonatomic, readonly) SPDisplayObjectContainer *parent;
+@property (unsafe_unretained, nonatomic, readonly) SPDisplayObjectContainer *parent;
 
 /// The root object the display object is connected to (i.e. an instance of the class
 /// that was passed to `[SPViewController startWithRoot:]`), or nil if the object is not connected
