@@ -10,8 +10,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Sparrow/SPDisplayObjectContainer.h>
-#import <Sparrow/SPMacros.h>
+#import "SPDisplayObjectContainer.h"
+#import "SPMacros.h"
 
 @class SPBitmapFont;
 @class SPTexture;

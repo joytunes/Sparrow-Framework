@@ -10,7 +10,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Sparrow/SPSprite.h>
+#import "SPSprite.h"
 
 /** ------------------------------------------------------------------------------------------------
  

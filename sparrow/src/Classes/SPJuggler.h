@@ -10,8 +10,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Sparrow/SPAnimatable.h>
-#import <Sparrow/SPMacros.h>
+#import "SPAnimatable.h"
+#import "SPMacros.h"
 
 /** ------------------------------------------------------------------------------------------------
 

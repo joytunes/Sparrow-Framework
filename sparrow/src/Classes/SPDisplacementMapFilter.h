@@ -9,7 +9,7 @@
 //  it under the terms of the Simplified BSD License.
 //
 
-#import <Sparrow/SPFragmentFilter.h>
+#import "SPFragmentFilter.h"
 
 @class SPPoint;
 

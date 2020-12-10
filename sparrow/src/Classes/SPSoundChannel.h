@@ -10,8 +10,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Sparrow/SPEventDispatcher.h>
-#import <Sparrow/SPSound.h>
+#import "SPEventDispatcher.h"
+#import "SPSound.h"
 
 /** ------------------------------------------------------------------------------------------------
 

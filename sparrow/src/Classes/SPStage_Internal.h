@@ -8,7 +8,7 @@
 //  it under the terms of the Simplified BSD License.
 //
 
-#import <Sparrow/SPStage.h>
+#import "SPStage.h"
 
 @interface SPStage (Internal)
 

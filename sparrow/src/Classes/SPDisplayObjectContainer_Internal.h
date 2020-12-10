@@ -8,7 +8,7 @@
 //  it under the terms of the Simplified BSD License.
 //
 
-#import <Sparrow/SPDisplayObjectContainer.h>
+#import "SPDisplayObjectContainer.h"
 
 @interface SPDisplayObjectContainer (Internal)
 

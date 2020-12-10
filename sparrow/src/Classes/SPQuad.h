@@ -10,7 +10,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Sparrow/SPDisplayObject.h>
+#import "SPDisplayObject.h"
 
 @class SPTexture;
 @class SPVertexData;

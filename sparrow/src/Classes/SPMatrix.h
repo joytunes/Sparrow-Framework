@@ -11,7 +11,7 @@
 
 #import <Foundation/Foundation.h>
 #import <GLKit/GLKMath.h>
-#import <Sparrow/SPPoolObject.h>
+#import "SPPoolObject.h"
 
 @class SPPoint;
 

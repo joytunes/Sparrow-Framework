@@ -10,7 +10,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Sparrow/SPEvent.h>
+#import "SPEvent.h"
 
 SP_EXTERN NSString *const SPEventTypeEnterFrame;
 

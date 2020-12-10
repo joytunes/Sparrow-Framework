@@ -9,7 +9,7 @@
 //  it under the terms of the Simplified BSD License.
 //
 
-#import <Sparrow/SPEvent.h>
+#import "SPEvent.h"
 
 @interface SPEvent (Internal)
 

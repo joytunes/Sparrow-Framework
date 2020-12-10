@@ -9,7 +9,7 @@
 //  it under the terms of the Simplified BSD License.
 //
 
-#import <Sparrow/SPContext.h>
+#import "SPContext.h"
 
 @interface SPContext (Internal)
 

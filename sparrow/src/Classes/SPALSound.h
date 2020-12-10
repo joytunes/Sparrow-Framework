@@ -10,7 +10,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Sparrow/SPSound.h>
+#import "SPSound.h"
 
 /** ------------------------------------------------------------------------------------------------ 
 

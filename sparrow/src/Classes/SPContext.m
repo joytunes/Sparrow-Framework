@@ -9,12 +9,12 @@
 //  it under the terms of the Simplified BSD License.
 //
 
-#import <Sparrow/SparrowClass.h>
-#import <Sparrow/SPContext_Internal.h>
-#import <Sparrow/SPMacros.h>
-#import <Sparrow/SPOpenGL.h>
-#import <Sparrow/SPRectangle.h>
-#import <Sparrow/SPTexture.h>
+#import "SparrowClass.h"
+#import "SPContext_Internal.h"
+#import "SPMacros.h"
+#import "SPOpenGL.h"
+#import "SPRectangle.h"
+#import "SPTexture.h"
 
 #import <GLKit/GLKit.h>
 #import <OpenGLES/EAGL.h>

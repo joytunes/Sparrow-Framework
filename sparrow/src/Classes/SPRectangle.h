@@ -10,7 +10,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Sparrow/SPPoolObject.h>
+#import "SPPoolObject.h"
 
 @class SPPoint;
 

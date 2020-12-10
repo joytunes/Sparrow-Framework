@@ -10,7 +10,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Sparrow/SPSubTexture.h>
+#import "SPSubTexture.h"
 
 @class SPDisplayObject;
 

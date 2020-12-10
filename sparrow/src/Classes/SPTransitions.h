@@ -10,7 +10,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Sparrow/SPMacros.h>
+#import "SPMacros.h"
 
 SP_EXTERN NSString *const SPTransitionLinear;
 SP_EXTERN NSString *const SPTransitionRandomize;

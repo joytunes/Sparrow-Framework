@@ -11,7 +11,7 @@
 
 #import <Foundation/Foundation.h>
 #import <GLKit/GLKMath.h>
-#import <Sparrow/SPMacros.h>
+#import "SPMacros.h"
 
 @class SPMatrix;
 @class SPPoint;

@@ -10,7 +10,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Sparrow/SPMacros.h>
+#import "SPMacros.h"
 
 SP_EXTERN const uint SPBlendModeAuto;
 SP_EXTERN const uint SPBlendModeNone;       // one, zero -- one, zero

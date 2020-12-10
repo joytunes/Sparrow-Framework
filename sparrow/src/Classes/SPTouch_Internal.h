@@ -9,7 +9,7 @@
 //  it under the terms of the Simplified BSD License.
 //
 
-#import <Sparrow/SPTouch.h>
+#import "SPTouch.h"
 
 @interface SPTouch (Internal)
 

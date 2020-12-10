@@ -10,8 +10,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Sparrow/SPTextField.h>
-#import <Sparrow/SPTexture.h>
+#import "SPTextField.h"
+#import "SPTexture.h"
 
 @class SPBitmapChar;
 @class SPQuadBatch;

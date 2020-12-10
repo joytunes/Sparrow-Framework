@@ -12,7 +12,7 @@
 #import <OpenGLES/ES2/gl.h>
 #import <OpenGLES/ES2/glext.h>
 
-#import <Sparrow/SPMacros.h>
+#import "SPMacros.h"
 
 // -----------------------------------------------------------
 // EXPERIMENTAL FEATURE: Activate the OpenGL state cache here!

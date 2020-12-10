@@ -10,7 +10,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Sparrow/SPEventDispatcher.h>
+#import "SPEventDispatcher.h"
 
 #ifdef SP_PHYSICS_CLASS
 @class SP_PHYSICS_CLASS;

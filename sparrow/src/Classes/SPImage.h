@@ -10,7 +10,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Sparrow/SPQuad.h>
+#import "SPQuad.h"
 
 /** ------------------------------------------------------------------------------------------------
 

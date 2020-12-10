@@ -10,7 +10,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Sparrow/SPPoolObject.h>
+#import "SPPoolObject.h"
 
 /* A color matrix class containing an array of 20 floats arranged as a 4x5 matrix. */
 

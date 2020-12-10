@@ -10,8 +10,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Sparrow/SPAnimatable.h>
-#import <Sparrow/SPImage.h>
+#import "SPAnimatable.h"
+#import "SPImage.h"
 
 @class SPSoundChannel;
 

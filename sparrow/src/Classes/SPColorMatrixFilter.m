@@ -9,13 +9,13 @@
 //  it under the terms of the Simplified BSD License.
 //
 
-#import <Sparrow/SparrowClass.h>
-#import <Sparrow/SPColorMatrix.h>
-#import <Sparrow/SPColorMatrixFilter.h>
-#import <Sparrow/SPMatrix.h>
-#import <Sparrow/SPNSExtensions.h>
-#import <Sparrow/SPOpenGL.h>
-#import <Sparrow/SPProgram.h>
+#import "SparrowClass.h"
+#import "SPColorMatrix.h"
+#import "SPColorMatrixFilter.h"
+#import "SPMatrix.h"
+#import "SPNSExtensions.h"
+#import "SPOpenGL.h"
+#import "SPProgram.h"
 
 // --- private interface ---------------------------------------------------------------------------
 
