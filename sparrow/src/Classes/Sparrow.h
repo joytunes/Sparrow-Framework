@@ -17,6 +17,58 @@
 
 #define SPARROW_VERSION @"2.1"
 
+#if SPARROW_SWIFT_PACKAGE
+#import <SparrowClass.h>
+#import <SPAudioEngine.h>
+#import <SPBaseEffect.h>
+#import <SPBitmapFont.h>
+#import <SPBlendMode.h>
+#import <SPBlurFilter.h>
+#import <SPButton.h>
+#import <SPColorMatrix.h>
+#import <SPColorMatrixFilter.h>
+#import <SPContext.h>
+#import <SPDelayedInvocation.h>
+#import <SPDisplacementMapFilter.h>
+#import <SPDisplayObject.h>
+#import <SPDisplayObjectContainer.h>
+#import <SPEnterFrameEvent.h>
+#import <SPEvent.h>
+#import <SPEventDispatcher.h>
+#import <SPGLTexture.h>
+#import <SPJuggler.h>
+#import <SPImage.h>
+#import <SPMacros.h>
+#import <SPMatrix.h>
+#import <SPMovieClip.h>
+#import <SPNSExtensions.h>
+#import <SPOpenGL.h>
+#import <SPOverlayView.h>
+#import <SPPoint.h>
+#import <SPProgram.h>
+#import <SPPVRData.h>
+#import <SPQuad.h>
+#import <SPQuadBatch.h>
+#import <SPRectangle.h>
+#import <SPRenderSupport.h>
+#import <SPRenderTexture.h>
+#import <SPResizeEvent.h>
+#import <SPSound.h>
+#import <SPSoundChannel.h>
+#import <SPSprite.h>
+#import <SPStage.h>
+#import <SPSubTexture.h>
+#import <SPTextField.h>
+#import <SPTexture.h>
+#import <SPTextureAtlas.h>
+#import <SPTouchEvent.h>
+#import <SPTransitions.h>
+#import <SPTween.h>
+#import <SPURLConnection.h>
+#import <SPUtils.h>
+#import <SPVertexData.h>
+#import <SPViewController.h>
+#else
 #import <Sparrow/SparrowClass.h>
 #import <Sparrow/SPAudioEngine.h>
 #import <Sparrow/SPBaseEffect.h>
@@ -67,3 +119,4 @@
 #import <Sparrow/SPUtils.h>
 #import <Sparrow/SPVertexData.h>
 #import <Sparrow/SPViewController.h>
+#endif
