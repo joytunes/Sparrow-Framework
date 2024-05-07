@@ -32,7 +32,7 @@ NSString *const EventTypeSceneClosing = @"closing";
     return self;
 }
 
-- (void)onBackButtonTriggered:(SPEvent *)event
+- (void)onBackButtonTriggered:(SPRWEvent *)event
 {
     [_backButton removeEventListenersAtObject:self forType:SPEventTypeTriggered];
     [self dispatchEventWithType:EventTypeSceneClosing bubbles:YES];

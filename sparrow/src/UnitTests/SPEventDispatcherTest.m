@@ -96,7 +96,7 @@
     [sprite addEventListener:@selector(onEvent2:) atObject:self forType:EVENT_TYPE];
     [sprite addEventListener:@selector(stopEventImmediately:) atObject:self forType:EVENT_TYPE];
     [sprite addEventListener:@selector(onEvent3:) atObject:self forType:EVENT_TYPE];
-    [sprite dispatchEvent:[SPEvent eventWithType:EVENT_TYPE]];    
+    [sprite dispatchEvent:[SPRWEvent eventWithType:EVENT_TYPE]];    
     
     XCTAssertEqual(2, _testCounter, @"stopEventImmediately did not work correctly");
     
@@ -108,7 +108,7 @@
     NSString *eventType = @"eventType";
     int __block testCounter = 0;
     
-    SPEventBlock block = ^(SPEvent *event)
+    SPEventBlock block = ^(SPRWEvent *event)
     {
         testCounter++;
     };
@@ -128,27 +128,27 @@
     XCTAssertEqual(1, testCounter, @"event block was called, but shouldn't have been");
 }
 
-- (void)onEvent:(SPEvent *)event
+- (void)onEvent:(SPRWEvent *)event
 {
     _testCounter++;
 }
 
-- (void)onEvent2:(SPEvent *)event
+- (void)onEvent2:(SPRWEvent *)event
 {
     _testCounter *= 2;
 }
 
-- (void)onEvent3:(SPEvent *)event
+- (void)onEvent3:(SPRWEvent *)event
 {
     _testCounter += 3;
 }
 
-- (void)stopEvent:(SPEvent *)event
+- (void)stopEvent:(SPRWEvent *)event
 {
     [event stopPropagation];
 }
 
-- (void)stopEventImmediately:(SPEvent *)event
+- (void)stopEventImmediately:(SPRWEvent *)event
 {
     [event stopImmediatePropagation];
 }

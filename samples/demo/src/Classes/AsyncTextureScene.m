@@ -61,7 +61,7 @@
     return self;
 }
 
-- (void)onFileButtonTriggered:(SPEvent *)event
+- (void)onFileButtonTriggered:(SPRWEvent *)event
 {
     _fileImage.visible = NO;
     _logText.text = @"Loading texture ...";
@@ -91,7 +91,7 @@
     }];
 }
 
-- (void)onUrlButtonTriggered:(SPEvent *)event
+- (void)onUrlButtonTriggered:(SPRWEvent *)event
 {
     _urlImage.visible = NO;
     _logText.text = @"Loading texture ...";

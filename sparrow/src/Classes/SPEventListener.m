@@ -40,9 +40,9 @@
 {
     __block id weakTarget = target;
     
-    return [self initWithTarget:target selector:selector block:^(SPEvent *event)
+    return [self initWithTarget:target selector:selector block:^(SPRWEvent *event)
             {
-                typedef void (*EventFunc)(id, SEL, SPEvent *);
+                typedef void (*EventFunc)(id, SEL, SPRWEvent *);
                 ((EventFunc)objc_msgSend)(weakTarget, selector, event);
             }];
 }
@@ -60,7 +60,7 @@
 
 #pragma mark Methods
 
-- (void)invokeWithEvent:(SPEvent *)event
+- (void)invokeWithEvent:(SPRWEvent *)event
 {
     _block(event);
 }

@@ -9,9 +9,9 @@
 //  it under the terms of the Simplified BSD License.
 //
 
-#import "SPEvent.h"
+#import "SPRWEvent.h"
 
-@interface SPEvent (Internal)
+@interface SPRWEvent (Internal)
 
 - (BOOL)stopsImmediatePropagation;
 - (BOOL)stopsPropagation;

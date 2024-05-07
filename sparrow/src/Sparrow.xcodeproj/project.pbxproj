@@ -58,7 +58,7 @@
 		DE611375134F8F6C00AB742E /* SPAudioEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = DEE63A4B11AED38100D60321 /* SPAudioEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DE611376134F8F6C00AB742E /* SPSound.h in Headers */ = {isa = PBXBuildFile; fileRef = DEE63A4D11AED38100D60321 /* SPSound.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DE611377134F8F6C00AB742E /* SPSoundChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = DEE63A4F11AED38100D60321 /* SPSoundChannel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DE611379134F8F6C00AB742E /* SPEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = DEE593D10FA6116B00E3AEFC /* SPEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE611379134F8F6C00AB742E /* SPRWEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = DEE593D10FA6116B00E3AEFC /* SPRWEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DE61137A134F8F6C00AB742E /* SPEventDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = DEC2B6800F6D51430063AB1D /* SPEventDispatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DE61137B134F8F6C00AB742E /* SPTouch.h in Headers */ = {isa = PBXBuildFile; fileRef = DEE4449C0FABA7860085D36D /* SPTouch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DE61137C134F8F6C00AB742E /* SPTouchEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = DEE444A80FABABBB0085D36D /* SPTouchEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -160,7 +160,7 @@
 		DEF1735D11B075B000A11DD7 /* SPAVSound.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF1735B11B075B000A11DD7 /* SPAVSound.m */; };
 		DEF1736111B075BC00A11DD7 /* SPAVSoundChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF1735F11B075BC00A11DD7 /* SPAVSoundChannel.m */; };
 		DEFE4BCE101B31DF00E22471 /* SPTransitions.m in Sources */ = {isa = PBXBuildFile; fileRef = DED859440FB883EE00D3D7D2 /* SPTransitions.m */; };
-		DEFE4BD2101B31DF00E22471 /* SPEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = DEE593D20FA6116B00E3AEFC /* SPEvent.m */; };
+		DEFE4BD2101B31DF00E22471 /* SPRWEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = DEE593D20FA6116B00E3AEFC /* SPRWEvent.m */; };
 		DEFE4BD3101B31DF00E22471 /* SPEventDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC2B6810F6D51430063AB1D /* SPEventDispatcher.m */; };
 		DEFE4BD4101B31DF00E22471 /* SPTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = DEE4449D0FABA7860085D36D /* SPTouch.m */; };
 		DEFE4BD5101B31DF00E22471 /* SPTouchEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = DEE444A90FABABBB0085D36D /* SPTouchEvent.m */; };
@@ -340,8 +340,8 @@
 		DEE4449D0FABA7860085D36D /* SPTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTouch.m; sourceTree = "<group>"; };
 		DEE444A80FABABBB0085D36D /* SPTouchEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTouchEvent.h; sourceTree = "<group>"; };
 		DEE444A90FABABBB0085D36D /* SPTouchEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTouchEvent.m; sourceTree = "<group>"; };
-		DEE593D10FA6116B00E3AEFC /* SPEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPEvent.h; sourceTree = "<group>"; };
-		DEE593D20FA6116B00E3AEFC /* SPEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPEvent.m; sourceTree = "<group>"; };
+		DEE593D10FA6116B00E3AEFC /* SPRWEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPRWEvent.h; sourceTree = "<group>"; };
+		DEE593D20FA6116B00E3AEFC /* SPRWEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPRWEvent.m; sourceTree = "<group>"; };
 		DEE594490FA63BA800E3AEFC /* SPEventDispatcherTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPEventDispatcherTest.m; sourceTree = "<group>"; };
 		DEE63A4B11AED38100D60321 /* SPAudioEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPAudioEngine.h; sourceTree = "<group>"; };
 		DEE63A4C11AED38100D60321 /* SPAudioEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPAudioEngine.m; sourceTree = "<group>"; };
@@ -631,8 +631,8 @@
 				DED85A930FB49E6D000BAA95 /* Internal */,
 				DEEEB8C80FAA2C300059D72B /* SPEnterFrameEvent.h */,
 				DEEEB8C90FAA2C300059D72B /* SPEnterFrameEvent.m */,
-				DEE593D10FA6116B00E3AEFC /* SPEvent.h */,
-				DEE593D20FA6116B00E3AEFC /* SPEvent.m */,
+				DEE593D10FA6116B00E3AEFC /* SPRWEvent.h */,
+				DEE593D20FA6116B00E3AEFC /* SPRWEvent.m */,
 				DEC2B6800F6D51430063AB1D /* SPEventDispatcher.h */,
 				DEC2B6810F6D51430063AB1D /* SPEventDispatcher.m */,
 				DEAAF3D516BC0D21004EB9D5 /* SPResizeEvent.h */,
@@ -801,7 +801,7 @@
 				DE611384134F8F8300AB742E /* SPDisplayObjectContainer.h in Headers */,
 				DE0E8A1518E1BCC800A6ACC8 /* SPTextureCache.h in Headers */,
 				DE61137D134F8F6C00AB742E /* SPEnterFrameEvent.h in Headers */,
-				DE611379134F8F6C00AB742E /* SPEvent.h in Headers */,
+				DE611379134F8F6C00AB742E /* SPRWEvent.h in Headers */,
 				DE61137A134F8F6C00AB742E /* SPEventDispatcher.h in Headers */,
 				DED29C0716DFB48E000C2BD7 /* SPEventListener.h in Headers */,
 				872F5C3D1880C9E30016071B /* SPFragmentFilter.h in Headers */,
@@ -1027,7 +1027,7 @@
 				DEFE4BDF101B31DF00E22471 /* SPGLTexture.m in Sources */,
 				DEFE4BE0101B31DF00E22471 /* SPSubTexture.m in Sources */,
 				DEFE4BE1101B31DF00E22471 /* SPButton.m in Sources */,
-				DEFE4BD2101B31DF00E22471 /* SPEvent.m in Sources */,
+				DEFE4BD2101B31DF00E22471 /* SPRWEvent.m in Sources */,
 				DEFE4BD3101B31DF00E22471 /* SPEventDispatcher.m in Sources */,
 				DEFE4BD4101B31DF00E22471 /* SPTouch.m in Sources */,
 				872F5C481880E2B50016071B /* SPBlurFilter.m in Sources */,

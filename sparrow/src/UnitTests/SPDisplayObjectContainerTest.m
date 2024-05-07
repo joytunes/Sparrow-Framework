@@ -295,10 +295,10 @@
     [quad removeEventListenersAtObject:self forType:SPEventTypeRemovedFromStage];
 }
 
-- (void)onAdded:(SPEvent *)event { _added++; }
-- (void)onRemoved:(SPEvent *)event { _removed++; }
-- (void)onAddedToStage:(SPEvent *)event { _addedToStage++; }
-- (void)onRemovedFromStage:(SPEvent *)event { _removedFromStage++; }
+- (void)onAdded:(SPRWEvent *)event { _added++; }
+- (void)onRemoved:(SPRWEvent *)event { _removed++; }
+- (void)onAddedToStage:(SPRWEvent *)event { _addedToStage++; }
+- (void)onRemovedFromStage:(SPRWEvent *)event { _removedFromStage++; }
 
 - (void)testRemovedFromStage
 {
@@ -310,7 +310,7 @@
     [_testSprite removeEventListenersAtObject:self forType:SPEventTypeRemovedFromStage];        
 }
 
-- (void)onTestSpriteRemovedFromStage:(SPEvent *)event
+- (void)onTestSpriteRemovedFromStage:(SPRWEvent *)event
 {
     XCTAssertNotNil(_testSprite.stage, @"stage not accessible in removed from stage event");
 }
@@ -401,7 +401,7 @@
     [child2 addEventListener:@selector(onChildEvent:) atObject:self forType:@"dunno"];
     [child3 addEventListener:@selector(onChildEvent:) atObject:self forType:@"dunno"];
     
-    SPEvent *event = [SPEvent eventWithType:@"dunno"];
+    SPRWEvent *event = [SPRWEvent eventWithType:@"dunno"];
     [parent broadcastEvent:event];
     
     // event should have dispatched to all 3 children, even if the event listener
@@ -428,17 +428,17 @@
     childA2.name = @"childA2";
     
     [childA2 addEventListener:@selector(onBroadcastEvent:) atObject:self forType:@"test"];
-    [parent broadcastEvent:[SPEvent eventWithType:@"test"]];
+    [parent broadcastEvent:[SPRWEvent eventWithType:@"test"]];
     
     XCTAssertEqual(parent, _broadcastTarget, @"wrong event.target on broadcast");
 }
 
-- (void)onBroadcastEvent:(SPEvent *)event
+- (void)onBroadcastEvent:(SPRWEvent *)event
 {
     _broadcastTarget = event.target;
 }
 
-- (void)onChildEvent:(SPEvent *)event
+- (void)onChildEvent:(SPRWEvent *)event
 {
     SPDisplayObject *target = (SPDisplayObject *)event.target;
     
@@ -471,7 +471,7 @@
     XCTAssertEqual(1, parent.numChildren, @"wrong number of children");
 }
 
-- (void)onRemoveChild2:(SPEvent *)event
+- (void)onRemoveChild2:(SPRWEvent *)event
 {
     SPSprite *child2 = (SPSprite *)event.target;
     SPSprite *parent = (SPSprite *)child2.parent;

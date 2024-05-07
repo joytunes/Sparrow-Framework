@@ -81,7 +81,7 @@
     _egg.rotation = 0.0f;
 }
 
-- (void)onStartButtonPressed:(SPEvent *)event
+- (void)onStartButtonPressed:(SPRWEvent *)event
 {
     _startButton.enabled = NO;
     [self resetEgg];
@@ -120,7 +120,7 @@
     [Sparrow.juggler addObject:hideTween];
 }
 
-- (void)onDelayButtonPressed:(SPEvent *)event
+- (void)onDelayButtonPressed:(SPRWEvent *)event
 {
     _delayButton.enabled = NO;
     

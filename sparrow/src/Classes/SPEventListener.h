@@ -12,7 +12,7 @@
 #import <Foundation/Foundation.h>
 #import "SPEventDispatcher.h"
 
-@class SPEvent;
+@class SPRWEvent;
 
 /** ------------------------------------------------------------------------------------------------
  
@@ -37,7 +37,7 @@
 - (instancetype)initWithBlock:(SPEventBlock)block;
 
 /// Invokes the event block with a certain event.
-- (void)invokeWithEvent:(SPEvent *)event;
+- (void)invokeWithEvent:(SPRWEvent *)event;
 
 /// Indicates if this event fits either the combination of target and selector, or a block.
 - (BOOL)fitsTarget:(id)target andSelector:(SEL)selector orBlock:(SPEventBlock)block;

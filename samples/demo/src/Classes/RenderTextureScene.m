@@ -71,7 +71,7 @@
     [self addChild:_button];
 }
 
-- (void)onButtonTriggered:(SPEvent *)event
+- (void)onButtonTriggered:(SPRWEvent *)event
 {
     if (_brush.blendMode == SPBlendModeNormal)
     {

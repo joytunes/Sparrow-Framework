@@ -10,7 +10,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SPEvent.h"
+#import "SPRWEvent.h"
 
 typedef void (^SPEventBlock)(id event);
 
@@ -21,27 +21,27 @@ typedef void (^SPEventBlock)(id event);
  The event mechanism is a key feature of Sparrow's architecture. Objects can communicate with 
  each other through events.
  
- An event dispatcher can dispatch events (objects of type SPEvent or one of its subclasses) 
+ An event dispatcher can dispatch events (objects of type SPRWEvent or one of its subclasses) 
  to objects that have registered themselves as listeners. A string (the event type) is used to 
  identify different events.
  
  Here is a sample:
  
 	// dispatching an event
-	[self dispatchEvent:[SPEvent eventWithType:@"eventType"]];
+	[self dispatchEvent:[SPRWEvent eventWithType:@"eventType"]];
 	
 	// listening to an event from 'object'
 	[object addEventListener:@selector(onEvent:) atObject:self forType:@"eventType"];
 	
 	// the corresponding event listener
-	- (void)onEvent:(SPEvent *)event
+	- (void)onEvent:(SPRWEvent *)event
 	{
 	    // an event was triggered
 	}
  
  Alternatively, you can use blocks as event listeners:
  
-	[object addEventListenerForType:@"eventType" block:^(SPEvent *event)
+	[object addEventListenerForType:@"eventType" block:^(SPRWEvent *event)
 	 {
  	     // the event was triggered
 	 }];
@@ -54,7 +54,7 @@ typedef void (^SPEventBlock)(id event);
  
  Different to _Adobe Flash_, events in Sparrow do not have a capture-phase.
  
- @see [SPEvent]
+ @see [SPRWEvent]
  @see [SPDisplayObject]
  
 ------------------------------------------------------------------------------------------------- */
@@ -83,7 +83,7 @@ typedef void (^SPEventBlock)(id event);
 - (void)removeEventListenerForType:(NSString *)eventType block:(SPEventBlock)block;
 
 /// Dispatches an event to all objects that have registered for events of the same type.
-- (void)dispatchEvent:(SPEvent *)event;
+- (void)dispatchEvent:(SPRWEvent *)event;
 
 /// Creates a new (non-bubbling) event object and dispatches it.
 - (void)dispatchEventWithType:(NSString *)type;

@@ -10,7 +10,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SPEvent.h"
+#import "SPRWEvent.h"
 
 SP_EXTERN NSString *const SPEventTypeEnterFrame;
 
@@ -25,7 +25,7 @@ SP_EXTERN NSString *const SPEventTypeEnterFrame;
  
 ------------------------------------------------------------------------------------------------- */
 
-@interface SPEnterFrameEvent : SPEvent
+@interface SPEnterFrameEvent : SPRWEvent
 
 /// --------------------
 /// @name Initialization

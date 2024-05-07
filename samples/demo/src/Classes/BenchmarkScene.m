@@ -89,7 +89,7 @@
         child.rotation += 0.05f;    
 }
 
-- (void)onStartButtonPressed:(SPEvent *)event
+- (void)onStartButtonPressed:(SPRWEvent *)event
 {
     NSLog(@"starting benchmark");
     

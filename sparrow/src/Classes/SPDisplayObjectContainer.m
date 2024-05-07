@@ -271,7 +271,7 @@ static void getDescendantEventListeners(SPDisplayObject *object, NSString *event
     return nil;
 }
 
-- (void)broadcastEvent:(SPEvent *)event
+- (void)broadcastEvent:(SPRWEvent *)event
 {
     if (event.bubbles)
         [NSException raise:SPExceptionInvalidOperation
@@ -288,7 +288,7 @@ static void getDescendantEventListeners(SPDisplayObject *object, NSString *event
 
 - (void)broadcastEventWithType:(NSString *)type
 {
-    SPEvent *event = [[SPEvent alloc] initWithType:type bubbles:NO];
+    SPRWEvent *event = [[SPRWEvent alloc] initWithType:type bubbles:NO];
     [self broadcastEvent:event];
     [event release];
 }

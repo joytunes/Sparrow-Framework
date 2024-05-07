@@ -1,5 +1,5 @@
 //
-//  SPEvent.h
+//  SPRWEvent.h
 //  Sparrow
 //
 //  Created by Daniel Sperl on 27.04.09.
@@ -25,7 +25,7 @@ SP_EXTERN NSString *const SPEventTypeFlatten;
 
 /** ------------------------------------------------------------------------------------------------
 
- The SPEvent class contains data that describes an event.
+ The SPRWEvent class contains data that describes an event.
  
  `SPEventDispatcher`s create instances of this class and send them to registered listeners. An event
  contains information that characterizes an event, most importantly the event type and if the event 
@@ -33,7 +33,7 @@ SP_EXTERN NSString *const SPEventTypeFlatten;
  
  For some event types, this information is sufficient; other events may need additional information 
  to be carried to the listener. 
- In that case, you can subclass SPEvent and add properties with all the information you require. 
+ In that case, you can subclass SPRWEvent and add properties with all the information you require. 
  The SPEnterFrameEvent is an example for this practice; it adds a property about the time that
  has passed since the last frame.
  
@@ -42,7 +42,7 @@ SP_EXTERN NSString *const SPEventTypeFlatten;
  
 ------------------------------------------------------------------------------------------------- */
 
-@interface SPEvent : NSObject
+@interface SPRWEvent : NSObject
 
 /// --------------------
 /// @name Initialization

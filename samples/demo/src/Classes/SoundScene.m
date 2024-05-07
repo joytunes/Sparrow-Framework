@@ -162,50 +162,50 @@
     return self;
 }
 
-- (void)onPlayButtonTriggered:(SPEvent *)event
+- (void)onPlayButtonTriggered:(SPRWEvent *)event
 {    
     [_musicChannel play];
 }
 
-- (void)onPauseButtonTriggered:(SPEvent *)event
+- (void)onPauseButtonTriggered:(SPRWEvent *)event
 {    
     [_musicChannel pause];
 }
 
-- (void)onStopButtonTriggered:(SPEvent *)event
+- (void)onStopButtonTriggered:(SPRWEvent *)event
 {    
     [_musicChannel stop];
 }
 
-- (void)onSimpleButtonTriggered:(SPEvent *)event
+- (void)onSimpleButtonTriggered:(SPRWEvent *)event
 {
     // that's the easiest way to play a sound!
     [[SPSound soundWithContentsOfFile:@"sound1.caf"] play];
 }
 
-- (void)onChannelButtonTriggered:(SPEvent *)event
+- (void)onChannelButtonTriggered:(SPRWEvent *)event
 {
     // we change the color to demonstrate the "onCompleted" feature
     _channelButton.fontColor = 0xff0000;
     [_soundChannel play];
 }
 
-- (void)onVolume0ButtonTriggered:(SPEvent *)event
+- (void)onVolume0ButtonTriggered:(SPRWEvent *)event
 {
     [SPAudioEngine setMasterVolume:0.0f];
 }
 
-- (void)onVolume50ButtonTriggered:(SPEvent *)event
+- (void)onVolume50ButtonTriggered:(SPRWEvent *)event
 {
     [SPAudioEngine setMasterVolume:0.5f];
 }
 
-- (void)onVolume100ButtonTriggered:(SPEvent *)event
+- (void)onVolume100ButtonTriggered:(SPRWEvent *)event
 {
     [SPAudioEngine setMasterVolume:1.0f];
 }
 
-- (void)onSoundCompleted:(SPEvent *)event
+- (void)onSoundCompleted:(SPRWEvent *)event
 {
     _channelButton.fontColor = 0x0;
 }

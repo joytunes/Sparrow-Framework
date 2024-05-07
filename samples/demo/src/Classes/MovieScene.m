@@ -51,12 +51,12 @@
     return self;
 }
 
-- (void)onAddedToStage:(SPEvent *)event
+- (void)onAddedToStage:(SPRWEvent *)event
 {
     [Sparrow.juggler addObject:_movie];
 }
 
-- (void)onRemovedFromStage:(SPEvent *)event
+- (void)onRemovedFromStage:(SPRWEvent *)event
 {
     [Sparrow.juggler removeObject:_movie];
 }

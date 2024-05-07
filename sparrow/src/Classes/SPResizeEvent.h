@@ -10,7 +10,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SPEvent.h"
+#import "SPRWEvent.h"
 
 SP_EXTERN NSString *const SPEventTypeResize;
 
@@ -22,7 +22,7 @@ SP_EXTERN NSString *const SPEventTypeResize;
  
 ------------------------------------------------------------------------------------------------- */
 
-@interface SPResizeEvent : SPEvent
+@interface SPResizeEvent : SPRWEvent
 
 /// --------------------
 /// @name Initialization

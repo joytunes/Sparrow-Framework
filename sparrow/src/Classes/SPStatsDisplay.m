@@ -57,7 +57,7 @@
 
 #pragma mark Events
 
-- (void)onAddedToStage:(SPEvent *)event
+- (void)onAddedToStage:(SPRWEvent *)event
 {
     _framesPerSecond = _numDrawCalls = 0;
     [self update];

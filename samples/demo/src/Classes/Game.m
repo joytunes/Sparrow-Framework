@@ -94,7 +94,7 @@
     return self;
 }
 
-- (void)onButtonTriggered:(SPEvent *)event
+- (void)onButtonTriggered:(SPRWEvent *)event
 {
     if (_currentScene) return;
     
@@ -109,7 +109,7 @@
     [self addChild:_currentScene];
 }
 
-- (void)onSceneClosing:(SPEvent *)event
+- (void)onSceneClosing:(SPRWEvent *)event
 {
     [_currentScene removeFromParent];
     _currentScene = nil;

@@ -59,7 +59,7 @@
     }
 }
 
-- (void)onRemove:(SPEvent *)event
+- (void)onRemove:(SPRWEvent *)event
 {
     [self removeObject:(id<SPAnimatable>)event.target];
 }

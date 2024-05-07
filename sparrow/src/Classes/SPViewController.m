@@ -387,7 +387,7 @@
         _stage.width  = newWidth;
         _stage.height = newHeight;
         
-        SPEvent *resizeEvent = [[SPResizeEvent alloc] initWithType:SPEventTypeResize
+        SPRWEvent *resizeEvent = [[SPResizeEvent alloc] initWithType:SPEventTypeResize
                                width:newWidth height:newHeight animationTime:duration];
         [_stage broadcastEvent:resizeEvent];
         [resizeEvent release];

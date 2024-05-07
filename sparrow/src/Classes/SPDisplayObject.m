@@ -247,7 +247,7 @@
     return [matrix transformPoint:globalPoint];
 }
 
-- (void)broadcastEvent:(SPEvent *)event
+- (void)broadcastEvent:(SPRWEvent *)event
 {
     if (event.bubbles)
         [NSException raise:SPExceptionInvalidOperation
@@ -263,7 +263,7 @@
 
 #pragma mark SPEventDispatcher
 
-- (void)dispatchEvent:(SPEvent *)event
+- (void)dispatchEvent:(SPRWEvent *)event
 {
     // on one given moment, there is only one set of touches -- thus, 
     // we process only one touch event with a certain timestamp

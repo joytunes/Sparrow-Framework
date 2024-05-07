@@ -33,7 +33,7 @@
 #import <SPDisplayObject.h>
 #import <SPDisplayObjectContainer.h>
 #import <SPEnterFrameEvent.h>
-#import <SPEvent.h>
+#import <SPRWEvent.h>
 #import <SPEventDispatcher.h>
 #import <SPGLTexture.h>
 #import <SPJuggler.h>
@@ -84,7 +84,7 @@
 #import "SPDisplayObject.h"
 #import "SPDisplayObjectContainer.h"
 #import "SPEnterFrameEvent.h"
-#import "SPEvent.h"
+#import "SPRWEvent.h"
 #import "SPEventDispatcher.h"
 #import "SPGLTexture.h"
 #import "SPJuggler.h"

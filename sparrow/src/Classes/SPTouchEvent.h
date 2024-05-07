@@ -10,7 +10,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SPEvent.h"
+#import "SPRWEvent.h"
 #import "SPTouch.h"
 
 SP_EXTERN NSString *const SPEventTypeTouch;
@@ -54,7 +54,7 @@ SP_EXTERN NSString *const SPEventTypeTouch;
 
 ------------------------------------------------------------------------------------------------- */ 
  
-@interface SPTouchEvent : SPEvent
+@interface SPTouchEvent : SPRWEvent
 
 /// --------------------
 /// @name Initialization

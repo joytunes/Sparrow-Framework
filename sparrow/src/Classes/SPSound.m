@@ -11,7 +11,7 @@
 
 #import "SPALSound.h"
 #import "SPAVSound.h"
-#import "SPEvent.h"
+#import "SPRWEvent.h"
 #import "SPSound.h"
 #import "SPSoundChannel.h"
 #import "SPUtils.h"
@@ -194,7 +194,7 @@
 
 #pragma mark Events
 
-- (void)onSoundCompleted:(SPEvent *)event
+- (void)onSoundCompleted:(SPRWEvent *)event
 {
     SPSoundChannel *channel = (SPSoundChannel *)event.target;
     [channel stop];

@@ -224,7 +224,7 @@ static NSMutableDictionary *bitmapFonts = nil;
 
 #pragma mark Events
 
-- (void)onFlatten:(SPEvent *)event
+- (void)onFlatten:(SPRWEvent *)event
 {
     if (_requiresRedraw) [self redraw];
 }

@@ -1,5 +1,5 @@
 //
-//  SPEvent.m
+//  SPRWEvent.m
 //  Sparrow
 //
 //  Created by Daniel Sperl on 27.04.09.
@@ -9,7 +9,7 @@
 //  it under the terms of the Simplified BSD License.
 //
 
-#import "SPEvent.h"
+#import "SPRWEvent.h"
 #import "SPEventDispatcher.h"
 #import "SPEvent_Internal.h"
 #import "SPMacros.h"
@@ -27,7 +27,7 @@ NSString *const SPEventTypeFlatten              = @"SPEventTypeFlatten";
 
 // --- class implementation ------------------------------------------------------------------------
 
-@implementation SPEvent
+@implementation SPRWEvent
 {
     SPEventDispatcher *__unsafe_unretained _target;
     SPEventDispatcher *__unsafe_unretained _currentTarget;
@@ -99,7 +99,7 @@ NSString *const SPEventTypeFlatten              = @"SPEventTypeFlatten";
 
 // --- internal implementation ---------------------------------------------------------------------
 
-@implementation SPEvent (Internal)
+@implementation SPRWEvent (Internal)
 
 - (BOOL)stopsImmediatePropagation
 { 

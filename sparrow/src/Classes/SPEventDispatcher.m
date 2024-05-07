@@ -63,7 +63,7 @@
     [self removeEventListenersForType:eventType withTarget:nil andSelector:nil orBlock:block];
 }
 
-- (void)dispatchEvent:(SPEvent *)event
+- (void)dispatchEvent:(SPRWEvent *)event
 {
     NSMutableArray *listeners = _eventListeners[event.type];   
     if (!event.bubbles && !listeners) return; // no need to do anything.
@@ -118,7 +118,7 @@
 {
     if ([self hasEventListenerForType:type])
     {
-        SPEvent* event = [[SPEvent alloc] initWithType:type bubbles:NO];
+        SPRWEvent* event = [[SPRWEvent alloc] initWithType:type bubbles:NO];
         [self dispatchEvent:event];
         [event release];
     }
@@ -128,7 +128,7 @@
 {
     if (bubbles || [self hasEventListenerForType:type])
     {
-        SPEvent* event = [[SPEvent alloc] initWithType:type bubbles:bubbles];
+        SPRWEvent* event = [[SPRWEvent alloc] initWithType:type bubbles:bubbles];
         [self dispatchEvent:event];
         [event release];
     }
