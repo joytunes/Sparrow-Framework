@@ -211,7 +211,7 @@
 
 #pragma mark GLKViewDelegate Protocol
 
-- (void)glkView:(GLKView *)view drawInRect:(CGRect)rect
+- (void)glkView:(MGLKView *)view drawInRect:(CGRect)rect
 {
     @autoreleasepool
     {

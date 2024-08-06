@@ -10,7 +10,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <GLKit/GLKit.h>
+#import <MetalANGLE_ios_13.0/MGLKit.h>
+#import <MetalANGLE_ios_13.0/MGLLayer.h>
 
 @class SPContext;
 @class SPDisplayObject;
@@ -80,7 +81,7 @@ typedef void (^SPRootCreatedBlock)(id root);
  
 ------------------------------------------------------------------------------------------------- */
 
-@interface SPViewController : GLKViewController
+@interface SPViewController : MGLKViewController
 
 /// -------------
 /// @name Startup
@@ -129,7 +130,7 @@ typedef void (^SPRootCreatedBlock)(id root);
 /// ----------------
 
 /// The GLKView instance used as the root view for Sparrow.
-@property (nonatomic, strong) GLKView *view;
+@property (nonatomic, strong) MGLKView *view;
 
 /// The instance of the root class provided in `start:`method.
 @property (nonatomic, readonly) SPDisplayObject *root;

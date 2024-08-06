@@ -9,9 +9,8 @@
 //  it under the terms of the Simplified BSD License.
 //
 
-#import <OpenGLES/ES2/gl.h>
-#import <OpenGLES/ES2/glext.h>
-
+#define GL_GLEXT_PROTOTYPES 1
+#import <MetalANGLE_ios_13.0/angle_gl.h>
 #import "SPMacros.h"
 
 // -----------------------------------------------------------

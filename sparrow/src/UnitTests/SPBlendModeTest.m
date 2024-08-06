@@ -6,7 +6,6 @@
 //
 //
 
-#import <GLKit/GLKit.h>
 #import "SPTestCase.h"
 
 @interface SPBlendModeTest : SPTestCase

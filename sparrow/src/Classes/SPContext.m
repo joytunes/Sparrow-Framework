@@ -16,8 +16,8 @@
 #import "SPRectangle.h"
 #import "SPTexture.h"
 
-#import <GLKit/GLKit.h>
-#import <OpenGLES/EAGL.h>
+#import <MetalANGLE_ios_13.0/MGLKit.h>
+#import <MetalANGLE_ios_13.0/MGLLayer.h>
 
 #define currentThreadDictionary [[NSThread currentThread] threadDictionary]
 static NSString *const currentContextKey = @"SPCurrentContext";
@@ -27,7 +27,7 @@ static NSMutableDictionary *framebufferCache = nil;
 
 @implementation SPContext
 {
-    EAGLContext *_nativeContext;
+    MGLContext *_nativeContext;
     SPTexture *_renderTarget;
     SGLStateCacheRef _glStateCache;
 }
@@ -38,7 +38,7 @@ static NSMutableDictionary *framebufferCache = nil;
 {
     if ((self = [super init]))
     {
-        _nativeContext = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2 sharegroup:sharegroup];
+        _nativeContext = [[MGLContext alloc] initWithAPI:kMGLRenderingAPIOpenGLES2 sharegroup:sharegroup];
         _glStateCache = sglStateCacheCreate();
     }
     return self;
@@ -87,7 +87,7 @@ static NSMutableDictionary *framebufferCache = nil;
 
 + (BOOL)setCurrentContext:(SPContext *)context
 {
-    if (context && [EAGLContext setCurrentContext:context->_nativeContext])
+    if (context && [MGLContext setCurrentContext:context->_nativeContext])
     {
         currentThreadDictionary[currentContextKey] = context;
         sglStateCacheSetCurrent(context->_glStateCache);
@@ -101,7 +101,7 @@ static NSMutableDictionary *framebufferCache = nil;
 + (SPContext *)currentContext
 {
     SPContext *current = currentThreadDictionary[currentContextKey];
-    if (!current || current->_nativeContext != [EAGLContext currentContext])
+    if (!current || current->_nativeContext != [MGLContext currentContext])
         return nil;
 
     return current;
