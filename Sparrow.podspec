@@ -18,14 +18,14 @@ Pod::Spec.new do |s|
   }
   s.social_media_url = "http://twitter.com/Gamua"
   s.platform         = :ios, "5.0"
-  s.source           = {
-    :git => "https://github.com/joytunes/Sparrow-Framework.git",
-    :branch => "joytunes"
-  }
+  s.source = { :git => '' }
+  # s.source           = {
+  #   :git => "https://github.com/joytunes/Sparrow-Framework.git",
+  #   :branch => "joytunes"
+  # }
+  s.vendored_frameworks = "sparrow/src/MetalANGLE_ios_13.0.framework"
   s.source_files  = "sparrow/src/Classes/*.{h,m}"
   s.frameworks =
-    "GLKit",
-    "OpenGLES",
     "OpenAL",
     "QuartzCore",
     "AudioToolbox",

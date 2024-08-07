@@ -6,7 +6,7 @@
 
 // We don't use GLES from Apple framework.
 // Instead we use GLES provided by MetalANGLE.
-#define GLES_SILENCE_DEPRECATION
+//#define GLES_SILENCE_DEPRECATION
 #define GL_SILENCE_DEPRECATION
 
 #import <Foundation/Foundation.h>
