@@ -219,9 +219,9 @@
     });
 }
 
-#pragma mark GLKViewDelegate Protocol
+#pragma mark MGLKViewDelegate Protocol
 
-- (void)glkView:(MGLKView *)view drawInRect:(CGRect)rect
+- (void)mglkView:(MGLKView *)view drawInRect:(CGRect)rect
 {
     @autoreleasepool
     {
