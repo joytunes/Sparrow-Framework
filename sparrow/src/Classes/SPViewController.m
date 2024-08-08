@@ -89,6 +89,16 @@
     return [self initWithNibName:nil bundle:nil];
 }
 
+- (void)loadView {
+    MGLKView *glkView = [[MGLKView alloc] initWithFrame:[[UIScreen mainScreen] bounds] context:nil];
+    [glkView setDelegate:self];
+    [glkView setBackgroundColor:[UIColor redColor]];
+    [self setView:glkView];
+//    [glkView release];
+}
+
+
+
 - (void)dealloc
 {
     [self purgePools];
