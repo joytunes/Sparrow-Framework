@@ -213,7 +213,7 @@
         GLsizei length = MAX_NAME_LENGTH;
         GLsizei size = 0;
         GLenum type = 0;
-        glGetActiveUniform(_name, i, MAX_NAME_LENGTH, &length, &size, &type, rawName);
+        glGetActiveAttrib(_name, i, MAX_NAME_LENGTH, &length, &size, &type, rawName);
         NSString *name = [[NSString alloc] initWithCString:rawName encoding:NSUTF8StringEncoding];
         _attributes[name] = @(glGetAttribLocation(_name, rawName));
         [name release];
